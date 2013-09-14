@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-require 'backports'
 require 'slim'
 require_relative 'spec_helper'
 
@@ -61,13 +60,13 @@ Say
 Hello <%= a.strip %>
 
 @@ simple_slim
-| Say 
+| Say
 - a = capture do
   | World
 | Hello #{a.strip}!
 
 @@ nested_slim
-| Say 
+| Say
 - a = capture do
   - b = capture do
     | World

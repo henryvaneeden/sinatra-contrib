@@ -1,6 +1,5 @@
 require 'sinatra/base'
 require 'sinatra/engine_tracking'
-require 'backports'
 
 module Sinatra
   #

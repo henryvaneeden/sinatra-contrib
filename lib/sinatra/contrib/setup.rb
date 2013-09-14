@@ -1,6 +1,5 @@
 require 'sinatra/base'
 require 'sinatra/contrib/version'
-require 'backports'
 
 module Sinatra
   module Contrib

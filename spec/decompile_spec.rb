@@ -1,4 +1,3 @@
-require 'backports'
 require_relative 'spec_helper'
 
 RSpec::Matchers.define :decompile do |path|
