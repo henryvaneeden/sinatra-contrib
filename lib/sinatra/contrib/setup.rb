@@ -17,7 +17,7 @@ module Sinatra
       end
 
       def autoload(name, path = nil, method = nil)
-        path ||= "sinatra/#{name.to_s.underscore}"
+        path ||= "sinatra/#{underscore(name.to_s)}"
         extensions[method] << name if method
         Sinatra.autoload(name, path)
       end
@@ -27,6 +27,16 @@ module Sinatra
           list = list.map { |name| Sinatra.const_get name }
           base.send(method, *list) unless base == ::Sinatra::Application
         end
+      end
+
+      private
+
+      def underscore(str)
+        str.gsub(/::/, '/').
+            gsub(/([A-Z]+)([A-Z][a-z])/,'\1_\2').
+            gsub(/([a-z\d])([A-Z])/,'\1_\2').
+            tr("-", "_").
+            downcase
       end
     end
 
