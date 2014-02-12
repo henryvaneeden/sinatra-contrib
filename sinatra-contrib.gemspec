@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
     "Thibaut Sacreste",
     "Uchio KONDO",
     "Will Bailey",
-    "Adrian Pacała",
+    "Adrian Pacala",
     "undr",
     "Aish",
     "Andrew Crump",
