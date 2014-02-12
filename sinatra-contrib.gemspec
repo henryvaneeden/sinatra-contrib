@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
     "Nicolas Sanguinetti",
     "Masahiro Fujiwara",
     "Rafael Magana",
-    "Hrvoje Šimić",
+    "Hrvoje Simic",
     "Jack Chu",
     "Sumeet Singh",
     "Ilya Shindyapin",
